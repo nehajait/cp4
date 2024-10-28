@@ -89,12 +89,6 @@ tr:nth-child(even) {
     }
 
 
-
-a:focus {
-    outline: 3px solid #041222;
-    outline-offset: 3px;
-}
-
 .progress-container {
     width: 100%;
     background-color: #e0e0e0;
