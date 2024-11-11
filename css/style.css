@@ -1,3 +1,26 @@
+:root {
+    /* Light Mode Colors */
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #8fb300; 
+    --header-bg-color: #041426;
+    --button-bg-color: #0c56bd;
+    --button-text-color: #ffffff;
+
+    /* Dark Mode Colors */
+    --dark-background-color: #121212;
+    --dark-text-color: #e0e0e0;
+    /* --dark-link-color: #ffeb3b;  */
+}
+
+h1 {
+    color: #1a0202;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(180, 216, 247);
+    text-align: center;
+}
+
+
 
 h2 {
     color: #1a0202;
@@ -50,9 +73,26 @@ th {
     color: white;
     background-color: #3a5f87;
     position: sticky;
-    top: 100px;
+    top: 0px;
+    z-index: 1;
+
 }
 
+.indiv_results td:hover, .indiv_results td:focus {
+    background-color: #56897d;
+}
+
+/* Athlete name hover-like effect */
+.indiv_results tbody tr td:nth-child(2) {
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+   
+  }
+  
+  .indiv_results tbody tr td:nth-child(2):hover,
+  .indiv_results tbody tr td:nth-child(2).visible {
+    background-color: #ff3bdb;
+  }
 
 tr:nth-child(even) {
     background-color: #d8cdcd;
@@ -74,21 +114,12 @@ tr:nth-child(even) {
     }
   
     
-  }
-    nav ul {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-   
+}
     img {
         width: 300%;
         height: auto;
         max-width: 100px; 
     }
-
-
 
 a:focus {
     outline: 3px solid #041222;
@@ -126,25 +157,63 @@ a:focus {
 .collapse-btn {
     font-weight: bolder;
     font-size: large;
-    background-color: #dee9f4;
-    border: 1px solid #102444;
+    background-color: #ca344b;
+    border: 1px solid #eadcef;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.collapse-btn:hover {
+
+/* .collapse-btn:hover {
     background-color: #ffeb3b;
-}
-.section {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+} */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .progress-bar {
+        transition: none; 
+    }
+    .collapse-btn {
+        transition: none; /
+    }
+
+    * {
+        scroll-behavior: auto;
+    }
 }
 
-.section.active {
-    display: block;
-    opacity: 10;
+
+  
+
+/* Light Mode Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.indiv_results td:hover, .indiv_results td:focus {
-    background-color: #ffeb3b;
+nav ul li a {
+    color: var(--link-color);
 }
+
+header {
+    background-color: var(--header-bg-color);
+}
+
+button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+
+
+/* Dark Mode Styles 
+body.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+}
+
+body.dark-mode nav ul li a {
+    color: var(--dark-link-color);
+}
+
+*/

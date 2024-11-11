@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>56th Holly-Duane Raffin Festival of Races Mens 5000 Meters D1 Boys</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
         <header>
@@ -15,17 +15,23 @@
         <nav>
            <ul>
              <li> <a href = '../index.html'>Home</a></li>
-             <li> <a href = '../gallery.html'>Gallery</a></li>
+            
             </ul>
             </nav>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
         </header>
         <main>
+
+            <button onclick="showTeamStats()" class="hover-button">Show Team Stats</button>
+            <button onclick="showAthleteStats()" class="hover-button">Show Athlete Stats</button>
+        
         <div class="info">
-            <div>Date: Sat Sep 14 2024</div>
-            <div>Comments: The Skyline men's cross country team finished 12th with a total score of 309. Leading the team was Nicholas Yuan who posted a time of 17:31.6 followed closely by Jack Robichaud (17:43.1) and Enshu Kuan (17:44.4). Bruno Cifaldi (17:57.2) and Kyle Krasan (18:01.8) rounded out the top five showcasing consistent performances across the board. The team demonstrated strong efforts in a competitive field keeping a tight spread among the top runners and building momentum for the rest of the season.</div>
-        </div>
-        <h2>Team Results</h2>
-        <table class = "team_results">
+            <p><span class="date">Date: Sat Sep 14 2024</span></p>
+            <p><span class="bold-text">Comments:</span> The Skyline men's cross country team finished 12th with a total score of 309. Leading the team was Nicholas Yuan who posted a time of 17:31.6 followed closely by Jack Robichaud (17:43.1) and Enshu Kuan (17:44.4). Bruno Cifaldi (17:57.2) and Kyle Krasan (18:01.8) rounded out the top five showcasing consistent performances across the board. The team demonstrated strong efforts in a competitive field keeping a tight spread among the top runners and building momentum for the rest of the season.</div>
+        </div> </p>
+
+        <div id ="team-results"> <h2>Team Results</h2>
+            <table class = "team_results">
             <tr><th>Place</th><th>Team</th><th>Score</th></tr>
     <tr><td>1</td><td>Holly</td><td>79</td></tr><tr><td>2</td><td>Canton</td><td>133</td></tr><tr><td>3</td><td>Midland</td><td>145</td></tr><tr><td>4</td><td>Oxford</td><td>148</td></tr><tr><td>5</td><td>Plymouth</td><td>169</td></tr><tr><td>6</td><td>Salem</td><td>201</td></tr><tr><td>7</td><td>Lake Orion</td><td>213</td></tr><tr><td>8</td><td>Troy</td><td>215</td></tr><tr><td>9</td><td>Howell</td><td>218</td></tr><tr><td>10</td><td>Dexter</td><td>243</td></tr><tr><td>11</td><td>Davison</td><td>293</td></tr><tr><td>12</td><td>Midland Dow</td><td>309</td></tr><tr><td>13</td><td>Ann Arbor Skyline</td><td>349</td></tr><tr><td>14</td><td>Detroit Catholic Central</td><td>353</td></tr><tr><td>15</td><td>Utica Eisenhower</td><td>358</td></tr><tr><td>16</td><td>Romeo</td><td>431</td></tr><tr><td>17</td><td>Rochester Adams</td><td>437</td></tr><tr><td>18</td><td>Hartland</td><td>460</td></tr><tr><td>19</td><td>New Baltimore Anchor Bay</td><td>472</td></tr><tr><td>20</td><td>Utica Ford</td><td>483</td></tr><tr><td>21</td><td>Livonia Stevenson</td><td>508</td></tr><tr><td>22</td><td>Grand Blanc</td><td>552</td></tr><tr><td>23</td><td>Clinton Twp. Chippewa Valley</td><td>564</td></tr><tr><td>24</td><td>Troy Athens</td><td>680</td></tr>
         </table>
@@ -1606,5 +1612,6 @@
                         </tr>
         </table>
         </main>
+        <script src="../js/script.js"></script>
     </body>
 </html>
